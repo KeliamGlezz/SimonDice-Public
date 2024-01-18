@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Simon Dice</title>
+</head>
+<body>
+  <div id="inicio">
+    <h1>Jugar a Simon Dice</h1>
+    <button onclick="iniciarJuego()" id="conmenzar">Comenzar</button>
+  </div>
+
+  <div id="juego" class="oculto">
+    <h2>Rondas Completadas: <span id="contadorRondas">0</span></h2>
+    <div id="secuencia"></div>
+    <div id="tablero">
+      <div class="boton" id="verde" onclick="verificarMovimiento('verde')"></div>
+      <div class="boton" id="rojo" onclick="verificarMovimiento('rojo')"></div>
+      <div class="boton" id="azul" onclick="verificarMovimiento('azul')"></div>
+      <div class="boton" id="amarillo" onclick="verificarMovimiento('amarillo')"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
